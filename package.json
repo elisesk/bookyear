@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/elisesk/bookyear/issues"
   },
-  "homepage": "https://github.com/elisesk/bookyear#readme"
+  "homepage": "https://github.com/elisesk/bookyear#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }

@@ -1,9 +1,18 @@
-var http = require('http');
+var express = require('express'),
+	app = express();
 
-http.createServer(function (req, res) {
-	res.statusCode = 200;
-	res.setHeader('Content-Type', 'text/plain');
-	res.end('I am a Node app, made by the super talented unicorn Elise\n');
-}).listen(8080);
+app.set('port', (process.env.PORT || 5000));
 
-console.log('Server hopefully running on port 8080..');
+app.use(express.static(__dirname + '/public'));
+
+// Views is directory for all template files
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
+app.get('/', function(request, response) {
+  response.render('pages/index');
+});
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is hopefully running on port', app.get('port'));
+});
