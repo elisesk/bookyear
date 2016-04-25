@@ -1,0 +1,20 @@
+{
+  "name": "bookyear",
+  "version": "1.0.0",
+  "description": "What may grow into a app for book lovers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elisesk/bookyear.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elisesk/bookyear/issues"
+  },
+  "homepage": "https://github.com/elisesk/bookyear#readme"
+}
